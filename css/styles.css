@@ -1,0 +1,14 @@
+:root {
+  --primary-background-color: #ffffff;
+  --button-background-color: #f8f9fa;
+  --footer-background-color: #f2f2f2;
+  --header-text-color: #000000de;
+  --button-text-color: #3c4043;
+  --change-language-text-color: #4d5156;
+  --footer-text-color: #202124;
+  --primary-font-family: arial, sans-serif;
+  --header-font-size: 1.3rem;
+  --large-font-size: 1.5rem;
+  --medium-font-size: 1.4rem;
+  --small-font-size: 1.3rem;
+}
