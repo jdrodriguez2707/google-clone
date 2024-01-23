@@ -1,0 +1,31 @@
+* {
+  /* Include padding and border in size calculation. */
+  box-sizing: border-box;
+  /* Reset margins of all elements. */
+  margin: 0;
+  /* Reset padding of all elements. */
+  padding: 0;
+}
+
+html {
+  /* Change the default font size of the html element to 10px for a more convenient calculation when using 'rem' to set the font size. */
+  font-size: 62.5%;
+}
+
+body {
+  /* Ensure that the body fills the entire viewport. */
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* Balance headings across multiple lines into an even block. */
+  text-wrap: balance;
+}
+
+p {
+  /* Prevent text orphans (single words on last line). */
+  text-wrap: pretty;
+}
