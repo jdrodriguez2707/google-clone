@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A clone of the google website created for educational purposes"
-    />
     <title>Google</title>
     <link
       rel="shortcut icon"
@@ -88,35 +84,40 @@
         </figure>
 
         <div class="search-container__search-field">
-          <img
-            class="search-container__search-icon"
-            src="./assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg"
-            alt="Search icon"
+          <label for="search-input">
+            <img
+              class="search-container__search-icon"
+              src="./assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Search icon"
+            />
+          </label>
+
+          <input
+            class="search-container__search-input"
+            itemid="search-input"
+            type="search"
+            name="search-input"
+            id="search-input"
           />
 
-          <form class="search-container__search-form" method="post" action="/">
-            <input
-              class="search-container__search-input"
-              type="search"
-              name="search-input"
-              id="search-input"
-            />
-          </form>
-
           <div class="search-container__voice-image-icons-container">
-            <img
-              class="search-container__search-voice-icon"
-              src="./assets/icons/Google_mic.svg"
-              alt="Search by voice"
-              title="Search by voice"
-            />
+            <a class="search-container__icon-link" href="#">
+              <img
+                class="search-container__search-voice-icon"
+                src="./assets/icons/Google_mic.svg"
+                alt="Search by voice"
+                title="Search by voice"
+              />
+            </a>
 
-            <img
-              class="search-container__search-image-icon"
-              src="./assets/icons/Google_Lens_Icon.svg"
-              alt="Search by image"
-              title="Search by image"
-            />
+            <a class="search-container__icon-link" href="#">
+              <img
+                class="search-container__search-image-icon"
+                src="./assets/icons/Google_Lens_Icon.svg"
+                alt="Search by image"
+                title="Search by image"
+              />
+            </a>
           </div>
         </div>
 
@@ -160,7 +161,7 @@
 
         <ul class="main-footer__list">
           <li class="main-footer__item main-footer__item--hidden">
-            <a class="main-footer__link" href="#"> Dark theme: off </a>
+            <a class="main-footer__link" href="#">Dark theme: off</a>
           </li>
 
           <li class="main-footer__item">
