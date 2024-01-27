@@ -25,7 +25,7 @@ body {
 }
 
 .navbar {
-  padding: 12px;
+  padding: 12px 28px;
 }
 
 .navbar__list {
@@ -47,6 +47,10 @@ body {
 
 .navbar__item {
   margin-right: 20px;
+}
+
+.navbar__list-right .navbar__item:last-child {
+  margin-right: 0;
 }
 
 .navbar__link {
@@ -232,10 +236,6 @@ body {
   .navbar__list-right .navbar__item:nth-child(1),
   .navbar__link--gmail {
     display: none;
-  }
-
-  .navbar__list-right .navbar__item:last-child {
-    margin-right: 0;
   }
 
   .navbar__link {
