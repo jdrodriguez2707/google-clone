@@ -39,7 +39,10 @@ body {
   align-items: center;
 }
 
-.navbar__list-left .navbar__item:nth-child(1) {
+.navbar__item--menu-icon,
+.navbar__link--all-link,
+.main-footer__item--hidden,
+.main-footer__link--dark-theme {
   display: none;
 }
 
@@ -59,10 +62,6 @@ body {
 
 .navbar__link:hover {
   text-decoration: underline;
-}
-
-.navbar__link--all {
-  display: none;
 }
 
 .navbar__profile-image {
@@ -216,17 +215,9 @@ body {
   gap: 28px;
 }
 
-.main-footer__item--hidden {
-  display: none;
-}
-
 .main-footer__link {
   text-decoration: none;
   color: var(--footer-text-color);
-}
-
-.main-footer__link--dark-theme {
-  display: none;
 }
 
 .main-footer__link:hover {
@@ -247,12 +238,15 @@ body {
   }
 
   .navbar__list-left .navbar__item:nth-child(1),
-  .navbar__link--all {
+  .navbar__link--all-link,
+  .main-footer__item--hidden {
     display: inline-block;
   }
 
   .navbar__list-right .navbar__item:nth-child(1),
-  .navbar__link--gmail {
+  .navbar__link--gmail-link,
+  .search-container__button-container,
+  .main-footer__list--hidden {
     display: none;
   }
 
@@ -278,10 +272,6 @@ body {
     height: 56px;
   }
 
-  .search-container__button-container {
-    display: none;
-  }
-
   .search-container__change-language-text {
     margin-top: 32px;
   }
@@ -298,18 +288,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     font-size: var(--small-font-size);
-  }
-
-  .main-footer__list--hidden {
-    display: none;
-  }
-
-  .main-footer__item--hidden {
-    display: inline-block;
-  }
-
-  .main-footer__link--dark-theme {
-    display: inline-block;
   }
 }
 
