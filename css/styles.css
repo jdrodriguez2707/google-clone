@@ -111,6 +111,10 @@ body {
   box-shadow: 1px 1px 11px -2px #dadce0;
 }
 
+.search-container__label-search-icon {
+  height: 22px;
+}
+
 .search-container__search-voice-icon,
 .search-container__search-image-icon,
 .search-container__search-icon {
@@ -144,6 +148,7 @@ body {
 
 .search-container__voice-image-icons-container {
   display: flex;
+  height: 22px;
 }
 
 .search-container__icon-link {
