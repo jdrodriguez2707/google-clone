@@ -237,7 +237,7 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   body {
     font-family: var(--secondary-font-family);
   }
@@ -299,7 +299,7 @@ body {
   }
 }
 
-@media (max-height: 500px) {
+@media (height <= 500px) {
   /* Prevent the main content from covering the header when the viewport height is reduced */
   .main-header {
     position: initial;
