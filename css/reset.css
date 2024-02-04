@@ -1,10 +1,17 @@
-* {
+*,
+*::after,
+*::before {
   /* Include padding and border in size calculation. */
   box-sizing: border-box;
+}
+
+* {
   /* Reset margins of all elements. */
   margin: 0;
   /* Reset padding of all elements. */
   padding: 0;
+  min-width: 0;
+  font: inherit;
 }
 
 html {
@@ -20,7 +27,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   /* Balance headings across multiple lines into an even block. */
   text-wrap: balance;
 }
@@ -28,4 +37,12 @@ h4 {
 p {
   /* Prevent text orphans (single words on last line). */
   text-wrap: pretty;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
