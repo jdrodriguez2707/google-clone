@@ -10,7 +10,9 @@
   margin: 0;
   /* Reset padding of all elements. */
   padding: 0;
+  /* Avoid problems with overflow in Flexbox and Grid */
   min-width: 0;
+  /* Ensure that the element inherits the font properties of its parent element */
   font: inherit;
 }
 
@@ -42,7 +44,10 @@ p {
 img,
 video,
 svg {
+  /* The element take up the entire available width of your container, which is useful for avoiding alignment issues */
   display: block;
+  /* Ensure that the element's height is scaled proportionally to its width, maintaining the original aspect ratio  */
   height: auto;
+  /* Prevent element from extending beyond the width of their container, which is useful for responsive designs. */
   max-width: 100%;
 }
