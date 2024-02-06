@@ -165,8 +165,8 @@ body {
   margin: 32px 0;
 }
 
-.search-container__button:nth-child(1) {
-  margin-right: 12px;
+.search-container__button + .search-container__button {
+  margin-left: 12px;
 }
 
 .search-container__button {
